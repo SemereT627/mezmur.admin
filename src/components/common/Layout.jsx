@@ -6,17 +6,15 @@ import {
   BsFillCalendarCheckFill,
 } from "react-icons/bs";
 import { IoIosNotificationsOutline } from "react-icons/io";
-import { useLocation, useNavigate } from "react-router-dom";
+import { useLocation } from "react-router-dom";
 import begenaLogo from "../../assets/images/begena.png";
 import { MdOutlineCardMembership, MdSubscriptions } from "react-icons/md";
-import { useSelector } from "react-redux";
-// import { AvatarDropdown } from "./dropdown/AvatarDropdown";
 
 const Layout = ({ children }) => {
   /**
    * states
    */
-  const navigate = useNavigate();
+
   const location = useLocation();
   const [open, setOpen] = useState(true);
   const [showText, setShowText] = useState(true);
@@ -181,7 +179,7 @@ const Layout = ({ children }) => {
                   }  ${
                     menu.bottomOrder === 0 && "absolute bottom-0 left-0 right-0"
                   }`}
-                  onClick={(e) => {
+                  onClick={() => {
                     setTitle(menu.title);
                     setClick(!click);
                   }}
@@ -236,7 +234,7 @@ const Layout = ({ children }) => {
                                   key={index}
                                   href={child.path}
                                   className="z-50"
-                                  onClick={(e) => {
+                                  onClick={() => {
                                     setTitle(child.title);
                                   }}
                                 >

@@ -28,7 +28,9 @@
     "prepare": "husky install"
   },
   "lint-staged": {
-    "*.{js,jsx}": "eslint --fix"
+    "src/**/*.{js,jsx}": [
+      "eslint --fix"
+    ]
   },
   "eslintConfig": {
     "extends": [
