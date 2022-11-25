@@ -94,7 +94,7 @@ const singerSlice = createSlice({
      * Fetch singers
      */
     builder
-      .addCase(fetchSingersAsync.pending, (state, action) => {
+      .addCase(fetchSingersAsync.pending, (state) => {
         state.fetchSingersLoading = true;
         state.fetchSingersError = null;
       })
@@ -110,7 +110,7 @@ const singerSlice = createSlice({
       /**
        * Create singer
        */
-      .addCase(createSingerAsync.pending, (state, action) => {
+      .addCase(createSingerAsync.pending, (state) => {
         state.createSingerLoading = true;
         state.createSingerError = null;
       })
@@ -126,7 +126,7 @@ const singerSlice = createSlice({
       /**
        * Fetch singer
        */
-      .addCase(fetchSingerAsync.pending, (state, action) => {
+      .addCase(fetchSingerAsync.pending, (state) => {
         state.fetchSingerLoading = true;
         state.fetchSingerError = null;
       })
@@ -142,7 +142,7 @@ const singerSlice = createSlice({
       /**
        * Update singer
        */
-      .addCase(updateSingerAsync.pending, (state, action) => {
+      .addCase(updateSingerAsync.pending, (state) => {
         state.updateSingerLoading = true;
         state.updateSingerError = null;
       })
@@ -161,7 +161,7 @@ const singerSlice = createSlice({
       /**
        * Delete singer
        */
-      .addCase(deleteSingerAsync.pending, (state, action) => {
+      .addCase(deleteSingerAsync.pending, (state) => {
         state.deleteSingerLoading = true;
         state.deleteSingerError = null;
       })
