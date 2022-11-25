@@ -1,13 +1,51 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: "Poppins-Bold";
+  src: url("../src/assets/fonts/Poppins-Bold.ttf");
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+@font-face {
+  font-family: "Poppins-Light";
+  src: url("../src/assets/fonts/Poppins-Light.ttf");
+}
+
+@font-face {
+  font-family: "Poppins-Medium";
+  src: url("../src/assets/fonts/Poppins-Medium.ttf");
+}
+
+@font-face {
+  font-family: "Poppins-Regular";
+  src: url("../src/assets/fonts/Poppins-Regular.ttf");
+}
+
+@font-face {
+  font-family: "Poppins-SemiBold";
+  src: url("../src/assets/fonts/Poppins-SemiBold.ttf");
+}
+
+.mezmur-scrollbar {
+  scrollbar-width: thin;
+  scrollbar-color: #9e9e9e transparent;
+}
+.mezmur-scrollbar::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+
+.mezmur-scrollbar::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.mezmur-scrollbar::-webkit-scrollbar-thumb {
+  background-color: #9e9e9e;
+  border-radius: 20px;
+  border: transparent;
+}
+
+.bg-gradient {
+  background: linear-gradient(to bottom, #6f6af8 0%, #8ecffb 100%);
 }
