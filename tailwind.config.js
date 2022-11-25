@@ -7,7 +7,21 @@ module.exports = {
       colors: {
         primary: "#805535",
         secondary: "#D1C0B0",
+        main: "#EFEBE9",
         links: "#abb0be",
+        light: {
+          dark: "#FAFAFA",
+          main: "#FFFFFF",
+          secondary: "#FBFBFA",
+        },
+        dark: {
+          main: "#000000",
+          light: "#767676",
+        },
+        white: {
+          main: "#FFFFFF",
+          dark: "#FAFAFA",
+        },
         success: {
           main: "#70C274",
         },
