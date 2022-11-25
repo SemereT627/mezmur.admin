@@ -1,8 +1,15 @@
-import logo from "./logo.svg";
-import "./App.css";
+import React from "react";
+import { Routes } from "react-router-dom";
+import Layout from "./components/common/Layout";
 
-function App() {
-  return <></>;
-}
+const App = () => {
+  return (
+    <>
+      <Layout>
+        <Routes></Routes>
+      </Layout>
+    </>
+  );
+};
 
 export default App;

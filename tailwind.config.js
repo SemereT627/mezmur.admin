@@ -26,10 +26,7 @@ module.exports = {
         serif: ["Poppins-Regular", ...defaultTheme.fontFamily.serif],
         mono: ["Poppins-Regular", ...defaultTheme.fontFamily.mono],
         "poppins-bold": ["Poppins-Bold", ...defaultTheme.fontFamily.sans],
-        "poppins-semibold": [
-          "Poppins-SemiBold",
-          ...defaultTheme.fontFamily.sans,
-        ],
+        "poppins-semibold": ["Poppins-SemiBold", ...defaultTheme.fontFamily.sans],
         "poppins-medium": ["Poppins-Medium", ...defaultTheme.fontFamily.sans],
         "poppins-regular": ["Poppins-Regular", ...defaultTheme.fontFamily.sans],
         "poppins-light": ["Poppins-Light", ...defaultTheme.fontFamily.sans],
