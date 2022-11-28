@@ -1,0 +1,30 @@
+[
+  {
+    "packageGroups": [
+      {
+        "name": "PackageGroup1"
+      }
+    ],
+    "packagePeriod": {
+      "name": "Package Period 1",
+      "numberOfDays": "45",
+      "status": "A"
+    },
+    "packageFee": "1000",
+    "membershipFee": "500"
+  },
+  {
+    "packageGroups": [
+      {
+        "name": "PackageGroup2"
+      }
+    ],
+    "packagePeriod": {
+      "name": "Package Period 2",
+      "numberOfDays": "5",
+      "status": "I"
+    },
+    "packageFee": "1100",
+    "membershipFee": "1500"
+  }
+]
